@@ -14,10 +14,6 @@ colors = {
     'text': '#000000'
 }
 
-server = app.server
-
-app.title = 'Explained Variance in Full Controls Test Set (10 fold resampling)'
-
 fig = go.Figure(data=[
     go.Scatter(
         x=df["Label"],
@@ -53,6 +49,10 @@ fig.update_layout(
 )
 
 app = dash.Dash(__name__)
+
+server = app.server
+
+app.title = 'Explained Variance in Full Controls Test Set (10 fold resampling)'
 
 app.layout = html.Div([
     dcc.Graph(id="graph", figure=fig, clear_on_unhover=True),
