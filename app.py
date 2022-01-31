@@ -14,6 +14,10 @@ colors = {
     'text': '#000000'
 }
 
+server = app.server
+
+app.title = 'Explained Variance in Full Controls Test Set (10 fold resampling)'
+
 fig = go.Figure(data=[
     go.Scatter(
         x=df["Label"],
