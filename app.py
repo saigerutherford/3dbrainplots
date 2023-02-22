@@ -38,7 +38,6 @@ fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='LightGray')
 fig.update_layout(
     xaxis=dict(title='ROI', showticklabels=False),
     yaxis=dict(title='Explained Variance (EV)', showgrid=True),
-    title="Explained Variance",
     plot_bgcolor=colors['background'],
     paper_bgcolor=colors['background'],
     font_color=colors['text'],
